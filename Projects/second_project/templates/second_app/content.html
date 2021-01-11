@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content Page</title>
+    <link rel="stylesheet" href="{% static "css/content_style.css" %}">
+</head>
+<body>
+    <h1>This is the first content page</h1>
+    <hr>
+    <h2>The following title was inserted to the content page:</h2>
+    <h3> {{ title }}</h3>
+    <div>
+        <img src="{% static "img/meaningful.png" %}">
+        <p><a href="../">Go back to home page</a></p>
+    </div>
+
+</body>
+</html>

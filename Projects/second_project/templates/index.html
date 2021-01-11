@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    {# inject css file   #}
+    <link rel="stylesheet" href="{% static "css/index_style.css" %}">
+</head>
+<body>
+    <h1>My Homepage</h1>
+    <hr>
+    <div>
+        <h2>Inserted title: {{ title }}</h2>
+        <img src="{% static "img/colorful.jpg" %}" alt="Oopps...., image not found!">
+        <p><a href="/second_app">Go to content page</a></p>
+    </div>
+</body>
+</html>
